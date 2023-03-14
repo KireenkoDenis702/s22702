@@ -1,2 +1,2 @@
 for i in range(13):
-    print("Fillipov - gayy")
+    print("YA- gayy")
