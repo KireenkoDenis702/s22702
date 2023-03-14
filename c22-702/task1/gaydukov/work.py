@@ -12,3 +12,4 @@ print(html_text)
 soup=BeautifulSoup(html_text, 'lxml')
 films=soup.find_all('div', class_='base-movie-main-info_mainInfo__ZL_u3')
 print(films[0].text)
+
