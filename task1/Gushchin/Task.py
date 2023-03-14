@@ -1,1 +1,4 @@
-# ЗАДАНИЕ НОМЕР 1234567
+def main():
+    print("I HATE NIGGERS")
+
+main()
