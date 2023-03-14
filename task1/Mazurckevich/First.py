@@ -5,7 +5,7 @@ import time
 
 s= Service('D:\driverselenium\chromedriver.exe')
 browser=webdriver.Chrome(service=s)
-browser.get('https://www.kinopoisk.ru/lists/movies/top250/')
+browser.get('https://www.kinopoisk.ru/lists/movies/top250/?ysclid=lf8d6qtxyd621928212&page=1')
 time.sleep(9)
 
 html_text=browser.page_source
@@ -15,3 +15,5 @@ films=soup.find_all('div', class_='base-movie-main-info_mainInfo__ZL_u3')
 
 
 print(films[0].text)
+
+#спарсить-данные-с-сайта-каталога-со-всех-страниц
