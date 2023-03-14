@@ -1,1 +1,1 @@
-wererdwf
+print('che')
