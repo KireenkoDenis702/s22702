@@ -1,4 +1,2 @@
-def main():
-    print("I HATE NIGGERS")
+from selenium import webdriver
 
-main()
