@@ -1,4 +1,2 @@
-def main():
-    print("Salam")
+from selenium import webdriver
 
-main()
