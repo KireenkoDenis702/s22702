@@ -3,12 +3,12 @@ from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import time
 
-s= Service('C:\1\chromedriver.exe')
-browser=webdriver.Chrome(service=s)
+s = Service('F:\Chromedriver\chromedriver.exe')
+browser = webdriver.Chrome(service=s)
 browser.get('https://www.kinopoisk.ru/lists/movies/top250/')
 time.sleep(10)
-html_text=browser.page_source
-soup=BeautifulSoup(html_text, 'lxml')
-films=soup.find_ALL('div', class_='base-movie-main-info_maimInfo__ZL_u3')
+html_text = browser.page_source
+soup = BeautifulSoup(html_text, 'lxml')
+films = soup.find_all("a", class_="base-movie-main-info_link__YwtP1")
 
 print(films[0].text)
