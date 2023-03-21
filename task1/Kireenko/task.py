@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from bs4 import BeautifulSoup
 import time
-
+r = 0
 place = 0
 s = Service("C:/1/chromedriver")
 browser = webdriver.Chrome(service=s)
