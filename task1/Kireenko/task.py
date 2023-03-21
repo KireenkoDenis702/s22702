@@ -7,7 +7,7 @@ place = 0
 s = Service("C:/1/chromedriver")
 browser = webdriver.Chrome(service=s)
 browser.get(f'https://www.kinopoisk.ru/lists/movies/top250/?page=1')
-time.sleep(15)
+time.sleep(20)
 for page in range(1, 6):
     i = 0
     browser.get(f'https://www.kinopoisk.ru/lists/movies/top250/?page={page}')
