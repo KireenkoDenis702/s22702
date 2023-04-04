@@ -8,7 +8,7 @@ place = 0
 s = Service('C:/1/chromedriver')
 browser = webdriver.Chrome(service=s)
 browser.get(f'https://eksmo.ru/ratings/RaitingYear/')
-time.sleep(1)
+time.sleep(2)
 
 for page in range(1):
     count = 0
